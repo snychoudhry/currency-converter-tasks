@@ -1,0 +1,50 @@
+input {
+  border: none;
+  border-bottom: 2px solid #c3c3c3;
+  padding: 5px 0;
+}
+input:focus {
+  outline: none;
+  border-bottom: 2px solid slategray;
+}
+
+select {
+  padding: 5px;
+  cursor: pointer;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container {
+  display: flex;
+  gap: 30px;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+p {
+  text-align: center;
+  font-weight: bold;
+}
+h1 {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    align-items: stretch;
+  }
+  .container span{
+    text-align: center;
+    align-self: center;
+  }
+}
